@@ -1,0 +1,11 @@
+/* 共通スタイルは外に書く */
+
+@media screen and (min-width: 960px) { /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 959px) { /* sp用スタイル */
+
+
+}

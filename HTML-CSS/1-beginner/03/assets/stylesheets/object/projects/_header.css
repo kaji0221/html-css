@@ -1,0 +1,73 @@
+/* 共通スタイルは外に書く */
+
+.wrapper {
+    margin: auto;
+}
+
+.header__container {
+    background-color: #141f40;
+    color: #fff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 120px;
+}
+
+.hum__menu {
+    display: none;
+}
+
+.menu__item {
+    float: left;
+    margin-left: 20px;
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+    .menu__list {
+        display: none;
+    }
+
+    .hum__menu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .hum__menu span {
+        background-color: #fff;
+        display: block;
+        position: absolute;
+        left: 5px;
+        height: 3px;
+        width: 50%;
+    }
+
+    .hum__menu span:nth-child(1) {
+        top: 10px;
+    }
+
+    .hum__menu span:nth-child(2) {
+        top: 20px;
+    }
+
+    .hum__menu span:nth-child(3) {
+        top: 30px;
+    }
+}
+
+@media screen and (min-width: 400px) {
+    /* pc用スタイル */
+
+
+}

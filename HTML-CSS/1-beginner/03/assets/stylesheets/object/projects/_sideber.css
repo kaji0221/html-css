@@ -1,0 +1,40 @@
+/* 共通スタイルは外に書く */
+
+.sideber__wrapper {
+    padding: 20px;
+    flex-basis: 25%;
+    background-color: #0ff;
+}
+
+.sideber__title {
+    margin-bottom: 30px;
+}
+
+.sideber__text {
+    font-size: 13px;
+}
+
+.sideber__wrapper p:nth-child(4) {
+    margin-bottom: 30px;
+}
+
+.sideber__wrapper p:nth-child(7) {
+    margin-bottom: 30px;
+}
+
+.sideber__wrapper span {
+    color: red;
+}
+
+@media screen and (min-width: 960px) {
+
+    /* pc用スタイル */
+    .main__container {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+}

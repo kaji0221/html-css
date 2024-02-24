@@ -1,0 +1,47 @@
+/* 共通スタイルは外に書く */
+
+.footer__container {
+    padding: 30px 0;
+    background-color: #ff4500;
+}
+
+.footer__content {
+    margin: 0 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__list {
+    display: flex;
+}
+
+.footerList__item {
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 960px) {
+    /* pc用スタイル */
+
+
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+    .footer__content {
+        display: block;
+        text-align: center;
+    }
+
+    .footer__list {
+        display: block;
+    }
+
+    .footerList__item {
+        margin: 0;
+    }
+
+    .copyright {
+        margin: 30px 0 0;
+    }
+}
