@@ -1,9 +1,5 @@
 /* 共通スタイルは外に書く */
 
-.wrapper {
-    margin: auto;
-}
-
 .header__container {
     background-color: #141f40;
     color: #fff;
@@ -17,23 +13,27 @@
     width: 120px;
 }
 
-.hum__menu {
+.headerHum__menu {
     display: none;
 }
 
-.menu__item {
+.headerMenu__item {
     float: left;
     margin-left: 20px;
+}
+
+.headerMenu__item:first-child {
+    margin-left: 0;
 }
 
 @media screen and (max-width: 959px) {
     /* sp用スタイル */
 
-    .menu__list {
+    .headerMenu__list {
         display: none;
     }
 
-    .hum__menu {
+    .headerHum__menu {
         display: block;
         position: relative;
         cursor: pointer;
@@ -44,7 +44,7 @@
         padding: 0;
     }
 
-    .hum__menu span {
+    .headerHum__menu span {
         background-color: #fff;
         display: block;
         position: absolute;
@@ -53,15 +53,15 @@
         width: 50%;
     }
 
-    .hum__menu span:nth-child(1) {
+    .headerHum__menu span:nth-child(1) {
         top: 10px;
     }
 
-    .hum__menu span:nth-child(2) {
+    .headerHum__menu span:nth-child(2) {
         top: 20px;
     }
 
-    .hum__menu span:nth-child(3) {
+    .headerHum__menu span:nth-child(3) {
         top: 30px;
     }
 }
