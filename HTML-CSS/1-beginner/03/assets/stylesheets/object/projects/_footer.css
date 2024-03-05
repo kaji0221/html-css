@@ -6,7 +6,7 @@
 }
 
 .footer__content {
-    margin: 0 80px;
+    margin: 0 100px;
     display: flex;
     justify-content: space-between;
 }
@@ -17,6 +17,10 @@
 
 .footerList__item {
     margin-left: 20px;
+}
+
+.footerList__item:first-child {
+    margin: 0;
 }
 
 @media screen and (min-width: 960px) {

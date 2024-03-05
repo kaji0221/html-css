@@ -14,8 +14,12 @@
     font-size: 13px;
 }
 
-.sideber__wrapper p:nth-of-type(3n) {
+.sideberText__container {
     margin-bottom: 30px;
+}
+
+.sideberText__container:last-child {
+    margin: 0;
 }
 
 .sideber__wrapper span {
