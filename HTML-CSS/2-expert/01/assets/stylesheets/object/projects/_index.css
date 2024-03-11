@@ -1,0 +1,34 @@
+/* 共通スタイルは外に書く */
+
+.main__wrapper {
+    background-image: url("/home/master/Desktop/2-expert 01/assets/images/common/sample-1.jpeg");
+    height: 900px;
+    position: relative;
+}
+
+.homePage__titleText {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 60px;
+}
+
+@media screen and (max-width: 960px) {
+    /* pc用スタイル */
+
+    .main__wrapper {
+        height: 620px;
+    }
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+    .homePage__titleText {
+        font-size: 40px;
+        text-align: center;
+    }
+}
