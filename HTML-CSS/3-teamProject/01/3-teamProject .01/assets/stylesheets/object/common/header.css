@@ -1,0 +1,75 @@
+/* 共通スタイルは外に書く */
+
+.header {
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__logo {
+    width: 150px;
+}
+
+.header__humMenu {
+    display: none;
+}
+
+.header__menuList {
+    display: flex;
+}
+
+.header__menuItem {
+    margin-left: 25px;
+    font-weight: 700;
+}
+
+.header__menuItem:first-child {
+    margin: 0;
+}
+
+@media screen and (min-width: 960px) {
+    /* pc用スタイル */
+
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+    .header__menuList {
+        display: none;
+    }
+
+    .header__humMenu {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        width: 55px;
+        height: 50px;
+        background-color: transparent;
+        border: none;
+        padding: 0;
+    }
+
+    .header__humMenu span {
+        background-color: #111;
+        display: block;
+        position: absolute;
+        left: 15px;
+        height: 2.5px;
+        width: 70%;
+    }
+
+    .header__humMenu span:nth-child(1) {
+        top: 12px;
+    }
+
+    .header__humMenu span:nth-child(2) {
+        top: 26px;
+    }
+
+    .header__humMenu span:nth-child(3) {
+        top: 40px;
+    }
+
+}

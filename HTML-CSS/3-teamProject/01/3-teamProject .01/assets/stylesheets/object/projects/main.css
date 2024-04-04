@@ -1,0 +1,77 @@
+/* 共通スタイルは外に書く */
+
+.main__container {
+    background-color: #a9a9a9;
+    padding: 30px;
+}
+
+.homePage__content {
+    display: flex;
+    background-color: #fff;
+    padding: 30px;
+    align-items: center;
+}
+
+.homePage__content:nth-child(2) {
+    background-color: #a9a9a9;
+    flex-direction: row-reverse;
+}
+
+.title__text {
+    font-size: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    width: 40%;
+    text-align: center;
+}
+
+.content__title {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    width: 40%;
+    padding: 30px 30px 0 30px;
+    margin: auto;
+}
+
+.content__textArea {
+    margin: 0 50px;
+}
+
+.content__textTitle {
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 960px) {
+    /* pc用スタイル */
+
+    .content__textArea {
+        width: 60%;
+    }
+
+}
+
+@media screen and (max-width: 959px) {
+    /* sp用スタイル */
+
+    .homePage__content {
+        display: block;
+    }
+
+    .title__text {
+        width: 100%;
+        font-size: 28px;
+    }
+
+    .content__textArea {
+        margin: auto;
+        text-align: center;
+    }
+
+    .content__textTitle {
+        margin: 30px 0;
+    }
+
+
+
+
+}
